@@ -15,9 +15,7 @@ const RequestDetails: React.FC<Props> = ({ request }) => {
 
   return (
     <Box>
-      <Typography variant="h6" gutterBottom>
-        Request Details
-      </Typography>
+      
       <Box mb={2}>
         <Typography variant="subtitle2">Request ID:</Typography>
         <Typography variant="body1">{request.id}</Typography>

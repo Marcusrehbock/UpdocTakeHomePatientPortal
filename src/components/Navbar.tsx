@@ -14,11 +14,8 @@ const Navbar: React.FC = () => {
           <Button color="inherit" component={RouterLink} to="/">
             Dashboard
           </Button>
-          <Button color="inherit" component={RouterLink} to="/manage-requests">
-            Manage Requests
-          </Button>
           <Button color="inherit" component={RouterLink} to="/past-requests">
-            Past Requests
+            Completed Requests
           </Button>
           <Button color="inherit" component={RouterLink} to="/update-profile">
             Profile
@@ -28,6 +25,13 @@ const Navbar: React.FC = () => {
           </Button>
           <Button color="inherit" component={RouterLink} to="/request-telehealth-consultation">
             Telehealth Consultation
+          </Button>
+          {/* New buttons for Update Billing and Contact Support */}
+          <Button color="inherit" component={RouterLink} to="/update-billing">
+            Update Billing
+          </Button>
+          <Button color="inherit" component={RouterLink} to="/contact-support">
+            Contact Support
           </Button>
         </Box>
       </Toolbar>

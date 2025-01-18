@@ -9,6 +9,8 @@ import PastRequestsPage from './pages/PastRequestsPage.tsx';
 import UpdateProfilePage from './pages/UpdateProfilePage.tsx';
 import RequestMedicalCertificatePage from './pages/RequestMedicalCertificatePage.tsx';
 import RequestTelehealthConsultationPage from './pages/RequestTelehealthConsultationPage.tsx';
+import ContactSupportPage from './pages/ContactSupport.tsx';  // Import the page
+
 import { useState } from 'react';
 
 const App: React.FC = () => {
@@ -33,6 +35,7 @@ const App: React.FC = () => {
           <Route path="/update-profile" element={<UpdateProfilePage onShowSuccess={handleShowSuccess} />} />
           <Route path="/request-medical-certificate" element={<RequestMedicalCertificatePage onShowSuccess={handleShowSuccess} />} />
           <Route path="/request-telehealth-consultation" element={<RequestTelehealthConsultationPage onShowSuccess={handleShowSuccess} />} />
+          <Route path="/contact-support" element={<ContactSupportPage />} /> {/* Add this route */}
         </Routes>
       </Container>
       {/* Success Snackbar */}
